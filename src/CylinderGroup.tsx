@@ -4,7 +4,7 @@ import { Matrix4, DoubleSide } from "three"
 
 const CylinderGroup = () => {
   // Create a ref for the instanced mesh
-  const meshRef = useRef()
+  const meshRef = useRef(null)
   const count = 40
   const diameter = 0.1
 
