@@ -5,7 +5,7 @@ import { Matrix4, DoubleSide } from "three"
 const CylinderGroup = () => {
   // Create a ref for the instanced mesh
   const meshRef = useRef(null)
-  const count = 40
+  const count = 20
   const diameter = 0.1
 
   const cylinderPos = useMemo(() => {
@@ -39,7 +39,7 @@ const CylinderGroup = () => {
   return (
       // @ts-ignore
     <instancedMesh ref={meshRef} args={[null, null, count]} rotation={[0, 0, Math.PI / 4]}>
-      <cylinderGeometry args={[diameter, diameter, 10, 32]} />
+      <cylinderGeometry args={[diameter, diameter, 4, 32]} />
       <MeshTransmissionMaterial
         transmission={1}
         side={DoubleSide}
