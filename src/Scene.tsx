@@ -43,7 +43,6 @@ export function Scene() {
 
   return (
     <>
-      <OrbitControls />
       <CylinderGroup />
       {/* <group>
         {cylinderPos.map((pos, index) => (
